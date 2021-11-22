@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+/*Sección superior*/
+
+#contenedor-superior {
+    background-color: black;
+
+}
+
+#barra-superior {
+    display: flex;
+    justify-content: space-between;    
+    color: white;
+    font-size: 14px;
+}
+
+#barra-superior > p {
+    margin-left: 5%;
+}
+
+#barra-superior > ul {
+    display: flex;
+    margin-right: 5%;
+}
+
+.menu-superior {
+    margin-right: 20px;
+}
+
+/* Barra de navegación */
+
+.container-nav-bar {
+    background-color:rgba(240, 168, 62, 1);
+    display: flex;
+}
+
+#barra-menu-principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 62px;
+}
+
+#logo {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#menu-principal {
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navbar-menu {
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+/*Slide de bienvenida*/
+
+.imagen-slider {
+    width: 100%;
+    position: absolute;
+}
+
+main {
+    display: block;
+    position: relative;
+}
+
+.contenido-slider {
+    position: absolute;
+    left: 66%;
+    top: 15%;
+    text-align: center;
+}
+
+.contenido-slider > h2 {
+    color: rgba(60, 35, 19, 1);
+    ;
+}
+
+.container-title-slider {
+    font-size: 1.3em;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 7px;
+}
+
+.container-title-slider > h1 {
+    padding: 18px;
+}
+
+#btn-slider {
+    background: #F0A83E;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    border: none;
+    font-size: 20px;
+
+}
+
+/*Sección de cards*/
+
+.section-cards {
+    position: relative
+}
+
+/*Sección de suscripción*/
+
+.container-suscription {
+    background-color:rgba(240, 168, 62, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.suscription-logo {
+    display: flex;
+}
+
+.suscription-list {
+    display: flex;
+}
+
+footer {
+    background-color: rgba(60, 35, 19, 1);
+}
