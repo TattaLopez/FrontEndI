@@ -5,6 +5,9 @@
         "jaredkent.laserwave",
         "daylerees.rainglow",
         "dracula-theme.theme-dracula",
-        "nopjmp.fairyfloss"
+        "nopjmp.fairyfloss",
+        "eyhn.vscode-vibrancy",
+        "dhedgecock.radical-vscode",
+        "swashata.beautiful-ui"
     ]
 }

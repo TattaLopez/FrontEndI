@@ -21,48 +21,40 @@
                 </p>
                 <!-- Menú regional -->
                 <ul type="none">
-                    <li> <a class="menu-superior"> Español <span> > </span> </a> </li>
-                    <li> <a class="menu-superior"> ARG$ <span> > </span> </a> </li>
+                    <li> <a class="menu-superior"> Español <span> <i class="fas fa-angle-down"></i> </span> </a> </li>
+                    <li> <a class="menu-superior"> ARG$ <span> <i class="fas fa-angle-down"></i> </span> </a> </li>
                 </ul>
+                </div>
             </nav>   
         </div>
-            <!-- <i class="fas fa-paw"></i>
-            <i class="far fa-envelope"></i>
-            <i class="fas fa-map-marker-alt"></i>
-            <i class="fas fa-phone-alt"></i>
-            <i class="fas fa-phone"></i> -->
         <div class="container-nav-bar" id="barra-menu-principal">
             <div id="logo">
-                <img src="/Imagenes/Logo.svg" alt="logo front cat&dog">
+                <img src="/Imagenes/Logo (2).png" alt="logo front cat&dog">
             </div>    
                 <!-- Menú principal -->
             <nav>
                 <ul id="menu-principal" type="none">
-                    
                     <li>
                         <a class="navbar-menu" href="#"> 
-                            <span> - </span>
+                        <i class="fas fa-paw"></i>
                             Categorías
                         </a>    
                     </li>
-                    
                     <li>
                         <a class="navbar-menu" href="#"> 
-                            <span> - </span>
+                        <i class="fas fa-paw"></i>
                             Pets
                         </a>    
                     </li>
-                    
                     <li>
                         <a class="navbar-menu" href="#"> 
-                            <span> - </span>
+                        <i class="fas fa-paw"></i>
                             Nosotros
                         </a>    
                     </li>
-                    
                     <li>
                         <a class="navbar-menu" href="#"> 
-                            <span> - </span>
+                        <i class="fas fa-paw"></i>
                             Contactanos
                         </a>    
                     </li>
@@ -72,7 +64,7 @@
     </header> 
     <main>
         <!-- Slide de bienvenida -->
-        <div id="Slide">
+        <section class="slide">
             <img class="imagen-slider" src="/Imagenes/foto.png">
             <div class="contenido-slider">
                 <div class="container-title-slider">
@@ -87,75 +79,87 @@
                     COMEDEROS
                 </button>                
             </div>    
-        </div>
+        </section>
             <!-- Sección de cards -->
         <section class="section-cards">
-            <img src="/Imagenes/pawprint 1.svg">
+            <i class="fas fa-paw icono-principal"></i>
             <h1>Productos Destacados</h1>
             <nav>
-                <ul type="none">
+                <ul type="none" class="list-nav-main">
                     <li>
                         <a href="#">Comederos</a>
+                    </li>
+                    <li>
+                        -
                     </li>
                     <li>
                         <a href="#">Accesorios</a>
                     </li>
                     <li>
+                        -
+                    </li>
+                    <li>
                         <a href="#">Comida</a>
                     </li>
                 </ul>
-        </section>        
-        </nav>
-        <img src="/Imagenes/churrasquito.png">
-        <h4>
-            Juguete churrasquito
-        </h4>
-        <h5>
-            $150
-        </h5>
-        <img src="/Imagenes/comedero.png">
-        <h4>
-            Comedero para perro
-        </h4>
-        <h5>
-            $250
-        </h5>
-        <img src="/Imagenes/Huesito.png">
-        <h4>
-            Juguete Huesito
-        </h4>
-        <h5>
-            $650
-        </h5>
-
+            </nav>  
+            <div class="container-card">
+                <div class="card">
+                    <a href="#">
+                        <img src="/Imagenes/churrasquito.png">
+                        <h4>
+                            Juguete churrasquito
+                        </h4>
+                        <h5>
+                            $150
+                        </h5>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="/Imagenes/comedero.png">
+                        <h4>
+                            Comedero para perro
+                        </h4>
+                        <h5>
+                            $250
+                        </h5>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="/Imagenes/Huesito.png">
+                        <h4>
+                            Juguete Huesito
+                        </h4>
+                        <h5>
+                            $650
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </section>   
         <hb>
             <!-- Sección de formulario -->
-        <h2>
-            Contáctanos
-        </h2>
-        <form action="/my-handling-form-pag">
-            <ul type="none">
-                <li>
-                    <input type="text" id="name" name="user_name" placeholder="Nombre y Apellidos">
-                </li>
-                <li>
-                    <input type="email" id="mail" name="user_mail" placeholder="Ingresá tu correo electrónico">
-                </li>
-                <li>
-                    <input type="tel" id="telephon" name="user_number" placeholder="Teléfono">
-                </li>
-                <li class="button">
-                    <button>Resetear</button>
-                </li>
-                <li class="button">
-                    <button>Enviar</button>
-                </li>
-            </ul>
-        </form>
+        <section class="container-contact-form">
+            <form action="/my-handling-form-pag" method="post" class="contact-form">
+                <h2>
+                    Contáctanos
+                </h2>
+                <input type="text" id="name" name="user_name" placeholder="Nombre y Apellidos">
+                <input type="email" id="mail" name="user_mail" placeholder="Ingresá tu correo electrónico">
+                <input type="tel" id="telephon" name="user_number" placeholder="Teléfono">
+                <div class="buttons-contact-form">    
+                    <input type="reset" id="btn-reset" value="Resetear" name="reset">
+                    <input type="submit" id="btn-send" value="Enviar" name="submit">
+                </div>
+            </form>
+        </section>    
         <!-- Sección de suscripción -->
         <section class="container-suscription">
             <div class="suscription-logo">
-                <img src="/Imagenes/Group suscibete.svg" alt="Imagen suscibete">
+                <i class="far fa-envelope"></i>
+                <!-- <img src="/Imagenes/Group suscibete.svg" alt="Imagen suscibete"> -->
                 <h3>
                     Suscríbete para más novedades
                 </h3>
@@ -165,7 +169,7 @@
                     <li>
                         <input type="email" id="mail-suscribe" placeholder="Ingresá tu correo electrónico">
                     </li>
-                    <li class="button">
+                    <li class="button-suscribe">
                         <button>Suscribirme</button>
                     </li>
                 </ul>
@@ -174,31 +178,58 @@
     </main>
     <!-- Footer de la pagina -->
     <footer>
-        <img src="/Imagenes/Icono location.svg" alt="Icon location">
-        <h3>
-            Localidad
-        </h3>
-        <h6>
-            Calle - provincia
-        </h6>
-        <img src="/Imagenes/Icono phone.svg" alt="Icon telephon">
-        <h3>
-            Teléfono
-        </h3>
-        <h6>
-            Número de Teléfono
-        </h6>
-        <img src="/Imagenes/Icono email.svg" alt="Icon email">
-        <h3>
-            Correo electrónico
-        </h3>
-        <h6>
-            Direccioón de correo
-        </h6>
-        <img src="/Imagenes/Logo footer.svg" alt="Logo FrontCatDog">
-    <section>
-        <p>Todos los derechos reservados Front End</p>
-    </section>
+        <section class="footer-main">
+            <div class="container-info-footer">
+                <div class="container-icon-text">
+                    <div class="icon-info-footer">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <!-- <img src="/Imagenes/Icono location.svg" alt="Icon location"> -->
+                    <div class="text-info-footer">
+                        <h3>
+                            Localidad
+                        </h3>
+                        <h6>
+                            Calle - provincia
+                        </h6>
+                    </div>
+                </div>
+                <div class="container-icon-text">
+                    <div class="icon-info-footer">
+                        <i class="fas fa-phone"></i> 
+                    </div>
+                    <!-- <img src="/Imagenes/Icono phone.svg" alt="Icon telephon"> -->
+                    <div class="text-info-footer">
+                        <h3>
+                            Teléfono
+                        </h3>
+                        <h6>
+                            Número de Teléfono
+                        </h6>
+                    </div>
+                </div>
+                <div class="container-icon-text">
+                    <div class="icon-info-footer">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <!-- <img src="/Imagenes/Icono email.svg" alt="Icon email"> -->
+                    <div class="text-info-footer">
+                        <h3>
+                            Correo electrónico
+                        </h3>
+                        <h6>
+                            Dirección de correo
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <img src="/Imagenes/Logo (3).png" alt="Logo FrontCatDog">
+            </div>
+        </section>
+        <section class="section-derechos">
+            <p>Todos los derechos reservados Front End</p>
+        </section>
     </footer>
 </body>
 </html>
