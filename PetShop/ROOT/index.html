@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
     <link rel="icon" href="/Imagenes/favicon paw.ico" type="image/x-icon">
     <title>FrontCat&Dog</title>
 </head>
@@ -20,11 +20,17 @@
                     Grandes ofertas en comederos
                 </p>
                 <!-- Menú regional -->
-                <ul type="none">
-                    <li> <a class="menu-superior"> Español <span> <i class="fas fa-angle-down"></i> </span> </a> </li>
-                    <li> <a class="menu-superior"> ARG$ <span> <i class="fas fa-angle-down"></i> </span> </a> </li>
-                </ul>
-                </div>
+                <form action="config-page" method="get">
+                    <select name="language" id="idioma" class="menu-config">
+                        <option value="spanish" selected>Español</option>
+                        <option value="english">Inglés</option>
+                    </select>
+                    <select name="coin" id="moneda" class="menu-config">
+                        <option value="ARG$">ARG$</option>
+                        <option value="COL$">COL$</option>
+                        <option value="US$">US$</option>
+                    </select>
+                </form>
             </nav>   
         </div>
         <div class="container-nav-bar" id="barra-menu-principal">
@@ -59,6 +65,7 @@
                         </a>    
                     </li>
                 </ul>
+                <i class="fas fa-bars menu-alt"></i>
             </nav>
         </div>        
     </header> 
@@ -66,6 +73,7 @@
         <!-- Slide de bienvenida -->
         <section class="slide">
             <img class="imagen-slider" src="/Imagenes/foto.png">
+            <img class="imagen-slider-mobile" src="/Imagenes/Full 1.png">
             <div class="contenido-slider">
                 <div class="container-title-slider">
                     <h1>
@@ -158,6 +166,7 @@
         <!-- Sección de suscripción -->
         <section class="container-suscription">
             <div class="suscription-logo">
+                <i class="fas fa-align-right"></i>
                 <i class="far fa-envelope"></i>
                 <!-- <img src="/Imagenes/Group suscibete.svg" alt="Imagen suscibete"> -->
                 <h3>
@@ -212,7 +221,6 @@
                     <div class="icon-info-footer">
                         <i class="far fa-envelope"></i>
                     </div>
-                    <!-- <img src="/Imagenes/Icono email.svg" alt="Icon email"> -->
                     <div class="text-info-footer">
                         <h3>
                             Correo electrónico

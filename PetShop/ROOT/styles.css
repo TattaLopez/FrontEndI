@@ -20,7 +20,7 @@ body {
     margin-left: 5%;
 }
 
-#barra-superior > ul {
+#barra-superior > form {
     display: flex;
     margin-right: 5%;
 }
@@ -30,9 +30,15 @@ body {
     color: white;
 }
 
-.menu-superior {
+.menu-config {
     margin-right: 20px;
+    background: black;
+    color: white;
+    border: none;
+}
 
+.menu-alt {
+    display: none !important;
 }
 
 /* Barra de navegación */
@@ -88,6 +94,10 @@ main {
     width: 100%;
 }
 
+.imagen-slider-mobile {
+    display: none;
+}
+
 .contenido-slider {
     position: absolute;
     left: 63%;
@@ -107,7 +117,8 @@ main {
 }
 
 .container-title-slider > h1 {
-    padding: 18px;
+    padding: 1em;
+    color:  rgba(60, 35, 19, 1);
 }
 
 #btn-slider {
@@ -158,6 +169,7 @@ main {
 .container-card {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap
 }
 
 .card {
@@ -264,6 +276,13 @@ main {
 
 .suscription-logo > i {
     color: rgba(255, 255, 255, 1);    
+}
+
+.suscription-logo > i:nth-child(1) {
+    font-size: 33px;
+}
+
+.suscription-logo > i:nth-child(2) {
     font-size: 40px;
 }
 
@@ -288,6 +307,10 @@ main {
     margin-right: 5px;
     padding: 13px;
     box-sizing: border-box;
+}
+
+#mail-suscribe::placeholder {
+    font-size: 9px;
 }
 
 .button-suscribe > button {
@@ -376,3 +399,75 @@ footer {
     height: 20px;
     box-sizing: border-box;
 }
+
+.section-derechos > p {
+    margin: 0%;
+    padding-top: 4px;
+}
+
+/* Mobile version */
+
+@media (max-width: 460px) {
+    #contenedor-superior {
+        display: none; 
+    }
+
+    #menu-principal {
+        display: none;      
+    }
+
+    .menu-alt {
+        display: block;
+        color: white !important;
+        padding: 20px;
+        font-size: 21px;
+    }
+
+    .imagen-slider {
+        display: none;
+    }
+
+    .imagen-slider-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .contenido-slider {
+        width: 100%;
+        left: 0%;
+        text-align: right;
+    }
+
+    .container-title-slider > h1 {
+        padding: 0.4em;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container-title-slider {
+        height: 54px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .contenido-slider > h2 {
+        font-size: 16px;
+        margin-right: 18px;
+    }
+
+    #btn-slider {
+        margin-right: 37px;
+    }
+
+    .container-suscription {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+
+
