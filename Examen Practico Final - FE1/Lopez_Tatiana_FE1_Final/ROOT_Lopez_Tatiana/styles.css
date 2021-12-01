@@ -1,0 +1,555 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    background-image: url(/imagenes/bg-tablet-pattern.svg);
+    background-size: 115%;
+    background-position: -105% -2%;
+    background-repeat: no-repeat;
+}
+
+/* Mobile */
+
+@media (min-width:375px) {
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 45px 25px;
+    align-content: center;
+}
+
+header > img {
+    width: 140px;
+    height: 21.24px;
+    align-self: flex-end;
+}
+
+header .fa {
+    color: rgba(35, 44, 80, 1);
+    font-size: 30px;
+}
+
+header .fa:active {
+    color: rgb(143, 148, 167)
+}
+
+header > nav, header > button {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Buttons */
+
+button {
+    background: rgba(243, 96, 59, 1);
+    color: white;
+    width: 134px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+button:active {
+    background-color: rgba(249,143,117,255);
+}
+
+/* Article's section */
+
+.container-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(/imagenes/bg-tablet-pattern.svg);
+    background-size: 85%;
+    background-position: 404% 31%;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+/* Figure */
+
+figure {
+    width: 375px;
+}
+
+figure > img {
+    width: 100%;
+}
+
+/* First Article */
+
+article {
+    width: 375px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+h1 {
+    color: rgba(35, 44, 80, 1);
+    font-weight: 700;
+    font-size: 37px;
+    text-align: center;
+}
+
+p {
+    color: rgba(179, 178, 183, 1);
+    text-align: center;
+    font-weight: 400;
+    line-height: 21px;
+    line-height: 28px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+article > button {
+    margin: 30px 0 35px 0;
+}
+
+/* Second article */
+
+h2 {
+    color: rgba(35, 44, 80, 1);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container-articles > article:nth-child(3) > p {
+    font-size: 14px;
+}
+
+/* Advantage article */
+
+.container-articles > article:nth-child(4) {
+    padding: 0%;
+}
+
+h4 {
+    color: rgba(35, 44, 80, 1);
+    font-size: 17px;
+    font-weight: 700;    
+}
+
+.item-list-title > h4 > span {
+    background: rgba(243, 96, 59, 1);
+    width: 69px;
+    height: 43px;
+    border-radius: 30px;
+    color: white;
+    padding: 8px 22px;
+    margin-right: 10px;
+}
+
+.item-list-title {
+    background-color: rgb(255, 239, 234);
+    border-radius: 30px 0 0 30px;
+    margin: 45px 0 0 20px;
+    padding: 8px 0;
+}
+
+.item-list > p {
+    text-align: left;
+    padding: 0 20px 0 23px;
+}
+
+/* Cards section */
+
+.testimonials-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.container-cards{
+    width: 375px;
+    height: 245px;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(250, 250, 250, 1);
+    display: flex;
+    flex-direction: column;
+    height: 219px;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+    width: 375px;
+    padding: 2px;
+}
+
+.card > img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+}
+
+.container-selector-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.selector-card{
+    width: 14px;
+    height: 14px;
+    border: rgba(243, 96, 59, 1) solid 2px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.selector-card:active {
+    background: rgba(243, 96, 59, 1);
+}
+
+.selector-card > a {
+    padding: 0 0 2px 4px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Quote section */
+
+.container-quote {
+    background: rgba(243, 96, 59, 1);
+    background-image: url(/imagenes/bg-simplify-section-mobile.svg);
+    background-size: 26%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 46px;
+}
+
+h3 {
+    color: white;
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-quote > button {
+    background: white;
+    color: rgba(243, 96, 59, 1);
+}
+
+.container-quote > button:active {
+    color: rgba(249,143,117,255)
+}
+
+.container-quote > button:focus {
+    color: rgba(249,143,117,255)
+}
+
+/* Footer */
+
+footer {
+    background: rgba(30, 30, 38, 1);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 25px 11px;
+    height: 535px;
+}
+
+/* Form */
+
+#inp-email {
+    width: 240px;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    color: rgba(160, 160, 160, 1);
+    padding: 25px;
+    margin-right: 5px;
+}
+
+#inp-email:hover {
+    color: rgba(243, 96, 59, 1);
+}
+
+#inp-btn {
+    background: rgba(243, 96, 59, 1);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    height: 44px;
+    padding: 10px;
+    width: 75px;
+}
+
+#inp-btn:active {
+    background-color: rgba(249,143,117,255);
+}
+
+#inp-btn:focus {
+    background-color: rgba(249,143,117,255);
+}
+
+/* Footer lists */
+
+.container-lists {
+    display: flex;
+    width: 375px;
+    justify-content: space-around;
+}
+
+.container-lists > ul > li {
+    margin: 13px 0; 
+}
+
+.container-lists > ul > li > a {
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+}
+
+.container-lists > ul > li > a:hover {
+    color: rgba(243, 96, 59, 1);
+}
+
+/* Logos footer */
+
+.container-logos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+}
+
+.container-logos > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-logos > ul > li > a > i {
+    font-size: 35px;
+    color: white;
+    margin: 18px;
+}
+
+.container-logos > ul > li > a > i:hover {
+    color: rgba(243, 96, 59, 1);
+}
+
+.container-logos > img {
+    width: 145.43px;
+    height: 26.18px;
+    align-self: center;
+    margin-top: 30px;
+}
+
+/* Copyright */
+
+h5 {
+    color: rgba(140, 140, 148, 1);
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
+
+}
+
+/* Desktop */
+
+@media (min-width:1440px) {
+
+/* Body background Desktop */    
+
+body {
+    background-size: 46%;
+    background-position: 110% -4%;
+}
+
+/* nav bar Desktop*/
+
+header {
+    padding: 50px 120px;
+}
+
+header > img {
+    align-self: center;
+    width: auto;
+    height: 30px;
+}
+
+header > .fa {
+    display: none;
+}
+
+header > nav {
+    display: block;
+}
+
+header > nav > ul {
+    display: flex;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: rgba(35, 44, 80, 1);
+    margin-left: 40px;
+}
+
+header > nav > ul > li > a:hover {
+    color: rgba(179, 178, 183, 1);
+}
+
+header > button {
+    display: block;
+}
+
+/* Section articles Desktop*/
+
+.container-articles {
+    padding: 30px 93px;
+    justify-content: space-between;
+    background-size: 46%;
+    background-position: -45% 151%;
+}
+
+figure {
+    width: 543px;
+    order: 1;
+}
+
+article {
+    width: 543px;
+}
+
+/* First arcticle Desktop */
+
+h1 {
+    font-size: 58px;
+    text-align: left;
+}
+
+.container-articles > article:nth-child(2) > p {
+    padding-right: 85px;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 25px;
+    font-size: 17.56px;
+}
+
+.container-articles > article:nth-child(3) {
+    align-self: baseline;
+    padding-top: 31px;
+    order: 2;
+}
+
+.container-articles > article:nth-child(3) > h2 {
+    font-size: 36px;
+    text-align: left;
+}
+
+.container-articles > article:nth-child(3) > p {
+    font-size: 16px;
+    text-align: left;
+    padding-right: 110px;
+}
+
+.container-articles > article:nth-child(4) {
+    order: 3;
+}
+
+/* Advantage article Desktop */
+
+.item-list-title {
+    background-color: white;
+    margin: 45px 0 0 0px;
+}
+
+.item-list > p {
+    padding: 0px 0  0 75px;
+}
+
+/* Cards section Desktop */
+
+.testimonials-cards > h2 {
+    font-size: 39,21px;
+    text-align: center;
+}
+
+/* Quote section Desktop */
+
+.container-quote {
+    height: 224px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 120px;
+}
+
+blockquote {
+    width: 455px;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: left;
+    margin: 0%;
+}
+
+/* Footer Desktop*/
+
+footer {
+    height: 247px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 45px 38px;
+}
+
+.container-logos {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: auto;
+}
+
+.container-logos > img {
+    height: 30px;
+    width: auto;
+}
+
+.container-logos > ul > li > a > i {
+    margin: 18px 5px;
+    font-size: 30px;
+}
+
+.container-lists {
+    justify-content: space-between;
+}
+
+/* Copyright Desktop*/
+
+h5 {
+    width: auto;
+    position: absolute;
+    right: 115px;
+    margin-top: 109px;
+}
+
+}
+
