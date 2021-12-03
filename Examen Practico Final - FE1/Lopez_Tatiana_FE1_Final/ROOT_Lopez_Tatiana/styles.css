@@ -6,15 +6,13 @@
 
 body {
     font-family: 'Be Vietnam', sans-serif;
-    background-image: url(/imagenes/bg-tablet-pattern.svg);
+    background-image: url(/Lopez_Tatiana_FE1_Final/imagenes/bg-tablet-pattern.svg);
     background-size: 115%;
     background-position: -105% -2%;
     background-repeat: no-repeat;
 }
 
 /* Mobile */
-
-@media (min-width:375px) {
 
 /* Header */
 
@@ -49,6 +47,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    background-image: url(/Lopez_Tatiana_FE1_Final/imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: -43% 65%;
 }
 
 /* Buttons */
@@ -63,6 +65,11 @@ button {
     border: none;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     font-weight: 700;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgba(249,143,117,255);
 }
 
 button:active {
@@ -75,10 +82,6 @@ button:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(/imagenes/bg-tablet-pattern.svg);
-    background-size: 85%;
-    background-position: 404% 31%;
-    background-repeat: no-repeat;
     align-items: center;
 }
 
@@ -172,17 +175,45 @@ h4 {
     padding: 0 20px 0 23px;
 }
 
-/* Cards section */
+/* Slider section */
 
-.testimonials-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.slider {
+    flex: auto;
+    margin-bottom: 3em;
 }
 
-.container-cards{
+.title-slider {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.slider-holder {
     width: 375px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Cards section */
+
+.slider-card {
+    float: left;
+    margin: 0px;
+    padding-top: 20px;
+    position: relative;
+}  
+
+.card-holder {
+    width: 3200px;
+    height: 400px;
+    position: relative;
+}
+
+.container-cards {
+    width: 380px;
     height: 245px;
     overflow: hidden;
 }
@@ -191,48 +222,83 @@ h4 {
     background: rgba(250, 250, 250, 1);
     display: flex;
     flex-direction: column;
-    height: 219px;
+    height: 250px;
     justify-content: center;
     position: relative;
     align-content: center;
-    width: 375px;
-    padding: 2px;
+    width: 329px;
+    margin: 0px 25px 0px 25px;
+    padding: 20px;
 }
 
-.card > img {
-    height: 70px;
-    width: 70px;
-    position: absolute;
-}
-
-.container-selector-cards {
+.card-img-container {
     display: flex;
     justify-content: center;
 }
 
-.selector-card{
-    width: 14px;
-    height: 14px;
-    border: rgba(243, 96, 59, 1) solid 2px;
-    margin: 0 10px;
-    border-radius: 50%;
+.card-img-container > img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: -20px;
 }
 
-.selector-card:active {
-    background: rgba(243, 96, 59, 1);
+.card > p {
+    font-size: 14px;
 }
 
-.selector-card > a {
-    padding: 0 0 2px 4px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
+/* Funcionamiento del slider */
+
+#slider-card-1:target ~ .card-holder {
+    left: 0px;
+}
+
+#slider-card-2:target ~ .card-holder {
+    left: -380px;
+}
+
+#slider-card-3:target ~ .card-holder {
+    left: -760px;
+}
+
+#slider-card-4:target ~ .card-holder {
+    left: -1140px;
+}
+
+.button-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+.slider-selector {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid rgba(243, 96, 59, 1);
+}
+
+.slider-selector:hover {
+    background-color: rgba(243, 96, 59, 1);
+}
+
+/* Section slider button */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.7em;
 }
 
 /* Quote section */
 
 .container-quote {
     background: rgba(243, 96, 59, 1);
-    background-image: url(/imagenes/bg-simplify-section-mobile.svg);
+    background-image: url(/Lopez_Tatiana_FE1_Final/imagenes/bg-simplify-section-mobile.svg);
     background-size: 26%;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -257,12 +323,12 @@ h3 {
     color: rgba(243, 96, 59, 1);
 }
 
-.container-quote > button:active {
-    color: rgba(249,143,117,255)
+.container-quote > button:hover {
+    color: rgba(249,143,117,255);
 }
 
-.container-quote > button:focus {
-    color: rgba(249,143,117,255)
+.container-quote > button:active {
+    color: rgba(249,143,117,255);
 }
 
 /* Footer */
@@ -371,11 +437,9 @@ h5 {
     align-self: center;
 }
 
-}
+/* ====================== Desktop view ====================== */
 
-/* Desktop */
-
-@media (min-width:1440px) {
+@media (min-width:760px) {
 
 /* Body background Desktop */    
 
@@ -427,8 +491,6 @@ header > button {
 .container-articles {
     padding: 30px 93px;
     justify-content: space-between;
-    background-size: 46%;
-    background-position: -45% 151%;
 }
 
 figure {
@@ -487,11 +549,40 @@ h1 {
     padding: 0px 0  0 75px;
 }
 
-/* Cards section Desktop */
+/* Slider section Desktop */
 
-.testimonials-cards > h2 {
-    font-size: 39,21px;
-    text-align: center;
+.slider-selector {
+    display: none;
+}
+
+.slider {
+    overflow-x: hidden;
+}
+
+.slider-holder {
+    width: 100%;
+}
+
+.card {
+    width: 390px;
+}
+
+.card-holder {
+    width: 2000px;
+    animation: translateinfinite 25s linear infinite;
+}
+
+@keyframes translateinfinite {
+    0% {
+    transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
+.card {
+    margin-right: 70px;
 }
 
 /* Quote section Desktop */
